@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "92DF2312DFB65D591084B1532A7A4C7020749A69",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "92DF2312DFB65D591084B1532A7A4C7020749A69" : 0,
+    "A3BFDE44C64215BFC4BF49B811F4819A04853894" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E142A77D-B43E-4B78-8682-C8DBF000FD46",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "92DF2312DFB65D591084B1532A7A4C7020749A69" : "Beelong\/",
+    "A3BFDE44C64215BFC4BF49B811F4819A04853894" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Beelong",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Beelong\/Beelong.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:BonnieAllen\/Beelong.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92DF2312DFB65D591084B1532A7A4C7020749A69"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:BonnieAllen\/ios-static-analysis-exercises-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A3BFDE44C64215BFC4BF49B811F4819A04853894"
+    }
+  ]
+}

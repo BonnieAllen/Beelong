@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Menu05.png" translatesAutoresizingMaskIntoConstraints="NO" id="fZu-UW-8be">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfN-K4-6Si">
+                                <rect key="frame" x="124" y="516" width="129" height="23"/>
+                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="21"/>
+                                <state key="normal" title="Play Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3lC-Yb-euw" kind="show" id="byz-6o-LXZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pfN-K4-6Si" firstAttribute="centerX" secondItem="fZu-UW-8be" secondAttribute="centerX" id="IFz-yR-pez"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AnimatedBackground" destination="fZu-UW-8be" id="iiv-fR-IzI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="57"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="dPk-oH-mb7">
+            <objects>
+                <viewController id="3lC-Yb-euw" customClass="Game" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lnp-Ut-uhQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ec8-yI-4D1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d2m-AK-oc6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="GameBackGround.png" translatesAutoresizingMaskIntoConstraints="NO" id="ett-kf-teQ">
+                                <rect key="frame" x="0.0" y="-31" width="600" height="642"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="642" id="1Bj-bL-IFL"/>
+                                    <constraint firstAttribute="height" constant="642" id="HjK-V2-fXu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="3UJ-fj-GLp">
+                                <rect key="frame" x="285" y="227" width="30" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRq-2h-GDw">
+                                <rect key="frame" x="264" y="374" width="73" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Start Point">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartButton:" destination="3lC-Yb-euw" eventType="touchUpInside" id="v8d-sL-pxW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GRq-2h-GDw" firstAttribute="centerX" secondItem="ett-kf-teQ" secondAttribute="centerX" id="svb-Bb-wGD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Ball" destination="3UJ-fj-GLp" id="zkP-o0-0hH"/>
+                        <outlet property="StartButton" destination="GRq-2h-GDw" id="IrQ-FH-apY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOA-W9-VIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602" y="57"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ball.png" width="34" height="35"/>
+        <image name="GameBackGround.png" width="320" height="480"/>
+        <image name="Menu05.png" width="206" height="206"/>
+    </resources>
+</document>
