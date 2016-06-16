@@ -15,6 +15,9 @@ int X;
 {
     IBOutlet UIImageView *Ball;
     IBOutlet UIButton *StartButton;
+    IBOutlet UIImageView *Player;
+    IBOutlet UIImageView *Opponent;
+    
     
     NSTimer *timer;
 }

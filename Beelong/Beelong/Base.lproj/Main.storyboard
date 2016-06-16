@@ -63,6 +63,9 @@
                                     <constraint firstAttribute="height" constant="642" id="HjK-V2-fXu"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Player.png" translatesAutoresizingMaskIntoConstraints="NO" id="KtS-DZ-GH6">
+                                <rect key="frame" x="263" y="549" width="74" height="31"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="3UJ-fj-GLp">
                                 <rect key="frame" x="285" y="227" width="30" height="30"/>
                             </imageView>
@@ -76,6 +79,9 @@
                                     <action selector="StartButton:" destination="3lC-Yb-euw" eventType="touchUpInside" id="v8d-sL-pxW"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Player.png" translatesAutoresizingMaskIntoConstraints="NO" id="ot0-Pt-Arc">
+                                <rect key="frame" x="262" y="20" width="76" height="23"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -84,6 +90,8 @@
                     </view>
                     <connections>
                         <outlet property="Ball" destination="3UJ-fj-GLp" id="zkP-o0-0hH"/>
+                        <outlet property="Opponent" destination="ot0-Pt-Arc" id="RYe-wS-iIh"/>
+                        <outlet property="Player" destination="KtS-DZ-GH6" id="7WQ-hQ-6rH"/>
                         <outlet property="StartButton" destination="GRq-2h-GDw" id="IrQ-FH-apY"/>
                     </connections>
                 </viewController>
@@ -96,5 +104,6 @@
         <image name="Ball.png" width="34" height="35"/>
         <image name="GameBackGround.png" width="320" height="480"/>
         <image name="Menu05.png" width="206" height="206"/>
+        <image name="Player.png" width="58" height="18"/>
     </resources>
 </document>
